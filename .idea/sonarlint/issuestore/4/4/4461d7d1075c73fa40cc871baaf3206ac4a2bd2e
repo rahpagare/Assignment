@@ -1,0 +1,5 @@
+
+hsquid:UselessImportCheck"=Remove this unused import 'org.testng.annotations.AfterTest'.(Ü³¹Ê8—îÆÁ¼.
+rsquid:S00116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¢Î¾8æ¬¹À¼.
+tsquid:S00116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†É³Þúÿÿÿÿ8æ¬¹À¼.
+tsquid:S2068"V'Password' detected in this expression, review this potentially hard-coded credential.(ã¢Î¾8æ¬¹À¼.

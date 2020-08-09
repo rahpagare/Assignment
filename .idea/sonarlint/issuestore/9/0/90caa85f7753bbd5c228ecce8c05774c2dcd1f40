@@ -1,0 +1,5 @@
+
+tsquid:S2068"V'Password' detected in this expression, review this potentially hard-coded credential.(Ç·‚œ8ĞÏàÂ¼.
+rsquid:S00116"SRename this field "Password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç·‚œ8ĞÏàÂ¼.
+osquid:S00116"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÄŞ¨8ĞÏàÂ¼.
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ğÅ‡úÿÿÿÿ8Ş¹«Ã¼.
