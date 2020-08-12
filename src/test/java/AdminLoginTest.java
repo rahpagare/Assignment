@@ -1,5 +1,8 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -31,28 +34,32 @@ public class AdminLoginTest extends BaseClass {
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys(Password);
         driver.findElement(By.xpath("//span[contains(.,'Login')]")).click();
 
+        Reporter.log("User logged in successfully in admin site");
+
     }
 
 
     @Test(priority = 2)
     public void verifyMenuLinks(){
 
-        driver.findElement(By.xpath("//button[@class='btn btn-success']")).isDisplayed();
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn btn-success']")));
 
-        driver.findElement(By.xpath("//p[@class='serverHeader__title']")).click();
         Assert.assertEquals("DASHBOARD",driver.findElement(By.xpath("//p[@class='serverHeader__title']")).getText());
 
-        driver.findElement(By.xpath("//strong[contains(text(),'Dashboard')]")).click();
         Assert.assertEquals("DASHBOARD",driver.findElement(By.xpath("//strong[contains(text(),'Dashboard')]")).getText());
 
-        driver.findElement(By.xpath("//span[contains(.,'Updates')]")).click();
         Assert.assertEquals("UPDATES",driver.findElement(By.xpath("//span[contains(.,'Updates')]")).getText());
+
+        Reporter.log("Menu links verified under frontend site");
     }
 
     @Test(priority = 3)
     public void userLogout(){
 
         driver.findElement(By.xpath("//strong[contains(.,'Logout')]")).click();
+
+        Reporter.log("User logged in successfully in admin site");
     }
 
 }

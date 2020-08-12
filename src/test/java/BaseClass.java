@@ -4,6 +4,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -31,18 +33,20 @@ public class BaseClass {
             URL url = new URL("http://localhost:4444/wd/hub/");
 
             driver = new RemoteWebDriver(url, options);
+            Reporter.log("Chrome driver initiated.");
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         }
 
         else if (browserName.equalsIgnoreCase("firefox")){
+
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setBrowserName("firefox");
             capabilities.setPlatform(Platform.ANY);
-
             URL url = new URL("http://localhost:4444/wd/hub/");
 
             driver = new RemoteWebDriver(url, capabilities);
+            Reporter.log("Firefox driver initiated");
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         }
@@ -51,5 +55,6 @@ public class BaseClass {
     @AfterClass
     public void tearDown(){
         driver.quit();
+        Reporter.log("Driver closed after testing");
     }
 }
