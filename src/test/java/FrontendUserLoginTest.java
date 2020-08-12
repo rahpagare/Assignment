@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
@@ -23,13 +24,12 @@ public class FrontendUserLoginTest extends BaseClass {
         String parentWindow = list.get(0);
         String childWindow = list.get(1);
 
-        driver.switchTo().window(childWindow);
-
-        driver.findElement(By.xpath("//div[@class='dropdown dropdown-login dropdown-tab']//a[@id='dropdownCurrency']")).click();
         driver.switchTo().window(parentWindow);
         driver.close();
         driver.switchTo().window(childWindow);
-        driver.findElement(By.xpath("//a[@class='dropdown-item active tr'][contains(.,'Login')]")).click();
+        driver.findElement(By.xpath("//a[@href='javascript:void(0);'][contains(.,'My Account')]")).isDisplayed();
+        driver.findElement(By.xpath("//a[@href='javascript:void(0);'][contains(.,'My Account')]")).click();
+        driver.findElement(By.xpath("//a[@href='https://www.phptravels.net/login']")).click();
         driver.findElement(By.xpath("//input[@name='username']")).sendKeys(Email);
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys(Password);
         driver.findElement(By.xpath("//button[@type='submit'][contains(.,'Login')]")).click();
@@ -44,7 +44,7 @@ public class FrontendUserLoginTest extends BaseClass {
     @Test(priority = 3)
     public void userLogout(){
         driver.findElement(By.xpath("//a[contains(.,'Demo')]")).click();
-        driver.findElement(By.xpath("//a[@class='dropdown-item tr'][contains(.,'Logout')]")).click();
+        driver.findElement(By.xpath("//a[@href='javascript:void(0);'][contains(.,'Demo')]")).click();
     }
 
 }

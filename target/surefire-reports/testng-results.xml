@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="67134" started-at="2020-08-11T19:35:47 IST" finished-at="2020-08-11T19:36:54 IST">
+    <groups>
+    </groups>
+    <test name="TestOnChrome" duration-ms="33918" started-at="2020-08-11T19:35:47 IST" finished-at="2020-08-11T19:36:21 IST">
+      <class name="FrontendUserLoginTest">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:FrontendUserLoginTest@60c6f5b]" name="Setup" is-config="true" duration-ms="3270" started-at="2020-08-11T19:35:47 IST" finished-at="2020-08-11T19:35:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="userLogin()[pri:1, instance:FrontendUserLoginTest@60c6f5b]" name="userLogin" duration-ms="10467" started-at="2020-08-11T19:35:50 IST" finished-at="2020-08-11T19:36:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="verifyMenuLinks()[pri:2, instance:FrontendUserLoginTest@60c6f5b]" name="verifyMenuLinks" duration-ms="56" started-at="2020-08-11T19:36:00 IST" finished-at="2020-08-11T19:36:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenuLinks -->
+        <test-method status="PASS" signature="userLogout()[pri:3, instance:FrontendUserLoginTest@60c6f5b]" name="userLogout" duration-ms="1815" started-at="2020-08-11T19:36:01 IST" finished-at="2020-08-11T19:36:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrontendUserLoginTest@60c6f5b]" name="tearDown" is-config="true" duration-ms="2276" started-at="2020-08-11T19:36:02 IST" finished-at="2020-08-11T19:36:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrontendUserLoginTest -->
+      <class name="AdminLoginTest">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:AdminLoginTest@2038ae61]" name="Setup" is-config="true" duration-ms="2877" started-at="2020-08-11T19:36:05 IST" finished-at="2020-08-11T19:36:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="userLogin()[pri:1, instance:AdminLoginTest@2038ae61]" name="userLogin" duration-ms="3360" started-at="2020-08-11T19:36:07 IST" finished-at="2020-08-11T19:36:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="verifyMenuLinks()[pri:2, instance:AdminLoginTest@2038ae61]" name="verifyMenuLinks" duration-ms="6051" started-at="2020-08-11T19:36:11 IST" finished-at="2020-08-11T19:36:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenuLinks -->
+        <test-method status="PASS" signature="userLogout()[pri:3, instance:AdminLoginTest@2038ae61]" name="userLogout" duration-ms="2325" started-at="2020-08-11T19:36:17 IST" finished-at="2020-08-11T19:36:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AdminLoginTest@2038ae61]" name="tearDown" is-config="true" duration-ms="1399" started-at="2020-08-11T19:36:19 IST" finished-at="2020-08-11T19:36:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminLoginTest -->
+    </test> <!-- TestOnChrome -->
+    <test name="TestOnFirefox" duration-ms="33202" started-at="2020-08-11T19:36:21 IST" finished-at="2020-08-11T19:36:54 IST">
+      <class name="FrontendUserLoginTest">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:FrontendUserLoginTest@6f1fba17]" name="Setup" is-config="true" duration-ms="2957" started-at="2020-08-11T19:36:21 IST" finished-at="2020-08-11T19:36:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="userLogin()[pri:1, instance:FrontendUserLoginTest@6f1fba17]" name="userLogin" duration-ms="9431" started-at="2020-08-11T19:36:24 IST" finished-at="2020-08-11T19:36:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="verifyMenuLinks()[pri:2, instance:FrontendUserLoginTest@6f1fba17]" name="verifyMenuLinks" duration-ms="42" started-at="2020-08-11T19:36:33 IST" finished-at="2020-08-11T19:36:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenuLinks -->
+        <test-method status="PASS" signature="userLogout()[pri:3, instance:FrontendUserLoginTest@6f1fba17]" name="userLogout" duration-ms="1981" started-at="2020-08-11T19:36:33 IST" finished-at="2020-08-11T19:36:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:FrontendUserLoginTest@6f1fba17]" name="tearDown" is-config="true" duration-ms="1354" started-at="2020-08-11T19:36:35 IST" finished-at="2020-08-11T19:36:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FrontendUserLoginTest -->
+      <class name="AdminLoginTest">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:AdminLoginTest@185d8b6]" name="Setup" is-config="true" duration-ms="2967" started-at="2020-08-11T19:36:36 IST" finished-at="2020-08-11T19:36:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="userLogin()[pri:1, instance:AdminLoginTest@185d8b6]" name="userLogin" duration-ms="3568" started-at="2020-08-11T19:36:39 IST" finished-at="2020-08-11T19:36:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="verifyMenuLinks()[pri:2, instance:AdminLoginTest@185d8b6]" name="verifyMenuLinks" duration-ms="6376" started-at="2020-08-11T19:36:43 IST" finished-at="2020-08-11T19:36:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMenuLinks -->
+        <test-method status="PASS" signature="userLogout()[pri:3, instance:AdminLoginTest@185d8b6]" name="userLogout" duration-ms="2113" started-at="2020-08-11T19:36:49 IST" finished-at="2020-08-11T19:36:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AdminLoginTest@185d8b6]" name="tearDown" is-config="true" duration-ms="2408" started-at="2020-08-11T19:36:51 IST" finished-at="2020-08-11T19:36:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminLoginTest -->
+    </test> <!-- TestOnFirefox -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

@@ -18,7 +18,6 @@ public class BaseClass {
 
     @BeforeClass
     @Parameters("browserName")
-
     public void Setup(String browserName) throws MalformedURLException {
 
         if (browserName.equalsIgnoreCase("chrome")) {
@@ -26,7 +25,6 @@ public class BaseClass {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.ANY);
-
 
             ChromeOptions options = new ChromeOptions();
             options.merge(capabilities);
@@ -48,8 +46,6 @@ public class BaseClass {
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         }
-
-
     }
 
     @AfterClass

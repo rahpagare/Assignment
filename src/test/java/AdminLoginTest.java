@@ -36,12 +36,22 @@ public class AdminLoginTest extends BaseClass {
 
     @Test(priority = 2)
     public void verifyMenuLinks(){
-        Assert.assertEquals("DASHBOARD",driver.findElement(By.xpath("//strong[contains(.,'Dashboard')]")).getText());
+
+        driver.findElement(By.xpath("//button[@class='btn btn-success']")).isDisplayed();
+
+        driver.findElement(By.xpath("//p[@class='serverHeader__title']")).click();
+        Assert.assertEquals("DASHBOARD",driver.findElement(By.xpath("//p[@class='serverHeader__title']")).getText());
+
+        driver.findElement(By.xpath("//strong[contains(text(),'Dashboard')]")).click();
+        Assert.assertEquals("DASHBOARD",driver.findElement(By.xpath("//strong[contains(text(),'Dashboard')]")).getText());
+
+        driver.findElement(By.xpath("//span[contains(.,'Updates')]")).click();
         Assert.assertEquals("UPDATES",driver.findElement(By.xpath("//span[contains(.,'Updates')]")).getText());
     }
 
     @Test(priority = 3)
     public void userLogout(){
+
         driver.findElement(By.xpath("//strong[contains(.,'Logout')]")).click();
     }
 
